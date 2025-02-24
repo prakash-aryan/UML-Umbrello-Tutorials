@@ -1,0 +1,45 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="300" height="200" fill="#f8f9fa" rx="10" opacity="0.6" />
+  
+  <!-- Start Node -->
+  <circle cx="150" cy="20" r="10" fill="#3178c6" />
+  
+  <!-- First Activity -->
+  <rect x="110" y="40" width="80" height="40" rx="6" fill="white" stroke="#3178c6" stroke-width="2" />
+  <text x="150" y="65" font-family="Arial" font-size="12" text-anchor="middle" fill="#3178c6" font-weight="bold">Initialize</text>
+  
+  <!-- Arrow to First Activity -->
+  <line x1="150" y1="30" x2="150" y2="40" stroke="#3178c6" stroke-width="2" />
+  <polygon points="150,40 145,35 155,35" fill="#3178c6" />
+  
+  <!-- Decision Diamond -->
+  <polygon points="150,90 165,110 150,130 135,110" fill="white" stroke="#3178c6" stroke-width="2" />
+  <text x="150" y="112" font-family="Arial" font-size="8" text-anchor="middle" fill="#3178c6">Valid?</text>
+  
+  <!-- Arrow to Decision -->
+  <line x1="150" y1="80" x2="150" y2="90" stroke="#3178c6" stroke-width="2" />
+  <polygon points="150,90 145,85 155,85" fill="#3178c6" />
+  
+  <!-- Yes/No Labels -->
+  <text x="180" y="105" font-family="Arial" font-size="10" fill="#3178c6">Yes</text>
+  <text x="120" y="105" font-family="Arial" font-size="10" fill="#3178c6">No</text>
+  
+  <!-- Yes Path -->
+  <line x1="165" y1="110" x2="200" y2="110" stroke="#3178c6" stroke-width="2" />
+  <rect x="200" y="90" width="80" height="40" rx="6" fill="white" stroke="#3178c6" stroke-width="2" />
+  <text x="240" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="#3178c6" font-weight="bold">Process</text>
+  
+  <!-- No Path -->
+  <line x1="135" y1="110" x2="100" y2="110" stroke="#3178c6" stroke-width="2" />
+  <rect x="20" y="90" width="80" height="40" rx="6" fill="white" stroke="#3178c6" stroke-width="2" />
+  <text x="60" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="#3178c6" font-weight="bold">Error</text>
+  
+  <!-- End Node -->
+  <circle cx="150" cy="180" r="10" stroke="#3178c6" stroke-width="2" fill="white" />
+  <circle cx="150" cy="180" r="7" fill="#3178c6" />
+  
+  <!-- Final Arrows -->
+  <line x1="60" y1="130" x2="140" y2="175" stroke="#3178c6" stroke-width="2" />
+  <line x1="240" y1="130" x2="160" y2="175" stroke="#3178c6" stroke-width="2" />
+</svg>

@@ -1,0 +1,36 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+  margin-bottom: 1rem;
+}
+
+.featureCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.featureContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.featureDescription {
+  flex-grow: 1;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  padding-top: 1.5rem;
+}
