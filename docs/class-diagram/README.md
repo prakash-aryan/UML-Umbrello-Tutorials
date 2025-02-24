@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Creating Class Diagrams with Umbrello 5: Guide
 
 ## Table of Contents
