@@ -82,7 +82,7 @@ Creating a credit card management system that handles:
 - Transaction processing
 - Statement generation
 
-![Class Diagram](/static/img/activity-diagram/0_final_diagram.png)
+![Class Diagram](/static/img/class-diagram/0-Target.png)
 
 ### Key Requirements
 1. **Transaction Processing**
