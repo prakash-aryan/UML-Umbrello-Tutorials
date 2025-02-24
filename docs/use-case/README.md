@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Creating Use Case Diagrams with Umbrello 5: A Comprehensive Tutorial
 
 ## Table of Contents
