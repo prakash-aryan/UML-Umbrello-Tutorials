@@ -21,11 +21,3 @@ A collection of tutorials for creating UML diagrams using Umbrello 5. This repos
 
 - Umbrello 5 installed on your system
 - Basic understanding of UML concepts
-
-## License
-
-This tutorial collection is available under the MIT License.
-
-## Acknowledgments
-
-- The Umbrello development team
