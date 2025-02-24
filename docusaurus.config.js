@@ -1,6 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+
 const {themes} = require('prism-react-renderer');
 
 /** @type {import('@docusaurus/types').Config} */
@@ -8,6 +9,7 @@ const config = {
   title: 'UML Umbrello Tutorials',
   tagline: 'Learn UML diagramming with Umbrello 5',
   favicon: 'img/uml-logo.svg',
+  trailingSlash: true,
 
   // Set the production url of your site here
   url: 'https://prakash-aryan.github.io',
