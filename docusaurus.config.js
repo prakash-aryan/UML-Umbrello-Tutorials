@@ -12,7 +12,7 @@ const config = {
   // Set the production url of your site here
   url: 'https://prakash-aryan.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
-  baseUrl: '/',  // Changed for local development
+  baseUrl: '/UML-Umbrello-Tutorials/',  // Changed for local development
 
   // GitHub pages deployment config
   organizationName: 'prakash-aryan',
