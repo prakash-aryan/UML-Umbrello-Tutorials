@@ -50,7 +50,9 @@ This command generates static content into the `build` directory and can be serv
 
 This site is deployed on GitHub Pages. The deployment process uses two branches:
 - `main` - Contains the source code
-- `gh-pages` - Contains the built website
+- `gh-pages` - Contains the built website for deployment
+
+The live site is available at: https://prakash-aryan.github.io/UML-Umbrello-Tutorials/
 
 ### Manual Deployment Process
 
@@ -81,4 +83,3 @@ This tutorial collection is available under the MIT License.
 ## Author
 
 Made by [Prakash Aryan](https://prakasharyan.com/)
-```
