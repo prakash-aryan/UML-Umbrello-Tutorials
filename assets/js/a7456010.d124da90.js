@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkuml_umbrello_tutorials=self.webpackChunkuml_umbrello_tutorials||[]).push([[235],{8552:u=>{u.exports=JSON.parse('{"name":"docusaurus-plugin-content-pages","id":"default"}')}}]);
