@@ -8,23 +8,26 @@
 .featureSvg {
   height: 200px;
   width: 200px;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem; /* Increased from 1rem to 2rem for more space */
 }
 
 .featureCard {
   display: flex;
   flex-direction: column;
   height: 100%;
+  min-height: 450px; /* Added fixed minimum height */
 }
 
 .featureContent {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  min-height: 220px; /* Added minimum height to ensure consistent spacing */
 }
 
 .featureDescription {
   flex-grow: 1;
+  margin-bottom: 1rem; /* Added margin to push button down */
 }
 
 .buttons {

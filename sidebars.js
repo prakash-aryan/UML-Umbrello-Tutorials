@@ -24,6 +24,11 @@ const sidebars = {
       label: 'Class Diagrams',
       items: ['class-diagram/index'],
     },
+    {
+      type: 'category',
+      label: 'State Diagrams',
+      items: ['state-diagram/index'],
+    },
   ],
 };
 

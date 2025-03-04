@@ -34,6 +34,16 @@ const FeatureList = [
     ),
     link: '/docs/class-diagram'
   },
+  {
+    title: 'State Diagrams',
+    Svg: require('@site/static/img/state-diagram.svg').default,
+    description: (
+      <>
+        Model object lifecycle and system behavior with intuitive state transition diagrams.
+      </>
+    ),
+    link: '/docs/state-diagram'
+  },
 ];
 
 function Feature({Svg, title, description, link}) {
