@@ -1,0 +1,15 @@
+{
+  "id": "use-case/README",
+  "title": "Creating Use Case Diagrams with Umbrello 5: A Comprehensive Tutorial",
+  "description": "Table of Contents",
+  "source": "@site/docs/use-case/README.md",
+  "sourceDirName": "use-case",
+  "slug": "/use-case/",
+  "permalink": "/UML-Umbrello-Tutorials/docs/use-case/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/prakash-aryan/UML-Umbrello-Tutorials/tree/main/docs/use-case/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

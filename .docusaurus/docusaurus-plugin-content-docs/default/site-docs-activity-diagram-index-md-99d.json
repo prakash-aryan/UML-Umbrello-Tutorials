@@ -1,0 +1,27 @@
+{
+  "id": "activity-diagram/index",
+  "title": "Creating Activity Diagrams with Umbrello 5",
+  "description": "Table of Contents",
+  "source": "@site/docs/activity-diagram/index.md",
+  "sourceDirName": "activity-diagram",
+  "slug": "/activity-diagram/",
+  "permalink": "/UML-Umbrello-Tutorials/docs/activity-diagram/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/prakash-aryan/UML-Umbrello-Tutorials/tree/main/docs/activity-diagram/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Creating Use Case Diagrams with Umbrello 5: A Comprehensive Tutorial",
+    "permalink": "/UML-Umbrello-Tutorials/docs/use-case/"
+  },
+  "next": {
+    "title": "Creating Class Diagrams with Umbrello 5: Guide",
+    "permalink": "/UML-Umbrello-Tutorials/docs/class-diagram/"
+  }
+}

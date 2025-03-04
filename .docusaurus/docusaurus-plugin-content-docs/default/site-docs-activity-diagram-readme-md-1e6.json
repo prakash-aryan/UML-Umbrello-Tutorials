@@ -1,0 +1,15 @@
+{
+  "id": "activity-diagram/README",
+  "title": "Creating Activity Diagrams with Umbrello 5",
+  "description": "Table of Contents",
+  "source": "@site/docs/activity-diagram/README.md",
+  "sourceDirName": "activity-diagram",
+  "slug": "/activity-diagram/",
+  "permalink": "/UML-Umbrello-Tutorials/docs/activity-diagram/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/prakash-aryan/UML-Umbrello-Tutorials/tree/main/docs/activity-diagram/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}

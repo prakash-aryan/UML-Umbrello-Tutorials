@@ -1,0 +1,225 @@
+{
+  "entrypoints": [
+    "main"
+  ],
+  "origins": {
+    "42": [
+      42
+    ],
+    "17896441": [
+      869,
+      401
+    ],
+    "main": [
+      354,
+      869,
+      792
+    ],
+    "runtime~main": [
+      792,
+      869,
+      354
+    ],
+    "0e384e19": [
+      976
+    ],
+    "4cd8c2e7": [
+      423
+    ],
+    "5e95c892": [
+      647
+    ],
+    "6ab53c3d": [
+      96
+    ],
+    "99d4bdba": [
+      800
+    ],
+    "a7456010": [
+      235
+    ],
+    "a7bd4aaa": [
+      98
+    ],
+    "a94703ab": [
+      869,
+      48
+    ],
+    "aba21aa0": [
+      742
+    ],
+    "c13197ed": [
+      440
+    ],
+    "c4f5d8e4": [
+      869,
+      634
+    ],
+    "e64752a6": [
+      993
+    ],
+    "styles": [
+      48,
+      354,
+      401,
+      634,
+      792,
+      869
+    ]
+  },
+  "assets": {
+    "42": {
+      "js": [
+        {
+          "file": "assets/js/42.3be15f31.js",
+          "hash": "6659f8e10b50aef0",
+          "publicPath": "/UML-Umbrello-Tutorials/assets/js/42.3be15f31.js"
+        }
+      ]
+    },
+    "48": {
+      "js": [
+        {
+          "file": "assets/js/a94703ab.a903682d.js",
+          "hash": "cbf95aff3a53b74c",
+          "publicPath": "/UML-Umbrello-Tutorials/assets/js/a94703ab.a903682d.js"
+        }
+      ]
+    },
+    "96": {
+      "js": [
+        {
+          "file": "assets/js/6ab53c3d.2e551a74.js",
+          "hash": "fa1cc7277e255aa6",
+          "publicPath": "/UML-Umbrello-Tutorials/assets/js/6ab53c3d.2e551a74.js"
+        }
+      ]
+    },
+    "98": {
+      "js": [
+        {
+          "file": "assets/js/a7bd4aaa.c3b6ac4d.js",
+          "hash": "9f32eb2a8cda35f6",
+          "publicPath": "/UML-Umbrello-Tutorials/assets/js/a7bd4aaa.c3b6ac4d.js"
+        }
+      ]
+    },
+    "235": {
+      "js": [
+        {
+          "file": "assets/js/a7456010.d124da90.js",
+          "hash": "8ef8d9326457c81f",
+          "publicPath": "/UML-Umbrello-Tutorials/assets/js/a7456010.d124da90.js"
+        }
+      ]
+    },
+    "354": {
+      "js": [
+        {
+          "file": "assets/js/runtime~main.97a6ecb9.js",
+          "hash": "551a50763f4a9211",
+          "publicPath": "/UML-Umbrello-Tutorials/assets/js/runtime~main.97a6ecb9.js"
+        }
+      ]
+    },
+    "401": {
+      "js": [
+        {
+          "file": "assets/js/17896441.d069083d.js",
+          "hash": "1dbf0774cb2d0643",
+          "publicPath": "/UML-Umbrello-Tutorials/assets/js/17896441.d069083d.js"
+        }
+      ]
+    },
+    "423": {
+      "js": [
+        {
+          "file": "assets/js/4cd8c2e7.9b4681af.js",
+          "hash": "4f27b52ec0240437",
+          "publicPath": "/UML-Umbrello-Tutorials/assets/js/4cd8c2e7.9b4681af.js"
+        }
+      ]
+    },
+    "440": {
+      "js": [
+        {
+          "file": "assets/js/c13197ed.b0852d76.js",
+          "hash": "d96e9356271645ab",
+          "publicPath": "/UML-Umbrello-Tutorials/assets/js/c13197ed.b0852d76.js"
+        }
+      ]
+    },
+    "634": {
+      "js": [
+        {
+          "file": "assets/js/c4f5d8e4.727e6c57.js",
+          "hash": "f35d13e68c3cc116",
+          "publicPath": "/UML-Umbrello-Tutorials/assets/js/c4f5d8e4.727e6c57.js"
+        }
+      ]
+    },
+    "647": {
+      "js": [
+        {
+          "file": "assets/js/5e95c892.3aac199f.js",
+          "hash": "a1593ab3927d9628",
+          "publicPath": "/UML-Umbrello-Tutorials/assets/js/5e95c892.3aac199f.js"
+        }
+      ]
+    },
+    "742": {
+      "js": [
+        {
+          "file": "assets/js/aba21aa0.13140718.js",
+          "hash": "4ecf21f859189aa4",
+          "publicPath": "/UML-Umbrello-Tutorials/assets/js/aba21aa0.13140718.js"
+        }
+      ]
+    },
+    "792": {
+      "js": [
+        {
+          "file": "assets/js/main.d227c30c.js",
+          "hash": "21e308d2c1e004cf",
+          "publicPath": "/UML-Umbrello-Tutorials/assets/js/main.d227c30c.js"
+        }
+      ]
+    },
+    "800": {
+      "js": [
+        {
+          "file": "assets/js/99d4bdba.25430eca.js",
+          "hash": "3138622aa10da83b",
+          "publicPath": "/UML-Umbrello-Tutorials/assets/js/99d4bdba.25430eca.js"
+        }
+      ]
+    },
+    "869": {
+      "css": [
+        {
+          "file": "assets/css/styles.2a2cdd7e.css",
+          "hash": "52267ea03dace0ec",
+          "publicPath": "/UML-Umbrello-Tutorials/assets/css/styles.2a2cdd7e.css"
+        }
+      ]
+    },
+    "976": {
+      "js": [
+        {
+          "file": "assets/js/0e384e19.a010626a.js",
+          "hash": "f468d3c37641f0b9",
+          "publicPath": "/UML-Umbrello-Tutorials/assets/js/0e384e19.a010626a.js"
+        }
+      ]
+    },
+    "993": {
+      "js": [
+        {
+          "file": "assets/js/e64752a6.f3d966e1.js",
+          "hash": "9c494bfb74a83d88",
+          "publicPath": "/UML-Umbrello-Tutorials/assets/js/e64752a6.f3d966e1.js"
+        }
+      ]
+    }
+  }
+}

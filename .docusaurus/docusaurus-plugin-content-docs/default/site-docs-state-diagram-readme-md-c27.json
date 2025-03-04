@@ -1,0 +1,15 @@
+{
+  "id": "state-diagram/README",
+  "title": "Creating State Diagrams with Umbrello 5",
+  "description": "Table of Contents",
+  "source": "@site/docs/state-diagram/README.md",
+  "sourceDirName": "state-diagram",
+  "slug": "/state-diagram/",
+  "permalink": "/UML-Umbrello-Tutorials/docs/state-diagram/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/prakash-aryan/UML-Umbrello-Tutorials/tree/main/docs/state-diagram/README.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {}
+}
