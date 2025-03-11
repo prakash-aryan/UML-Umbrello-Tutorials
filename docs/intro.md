@@ -13,7 +13,7 @@ A collection of tutorials for creating UML diagrams using Umbrello 5. This repos
 2. [Activity Diagrams](./activity-diagram) - Create diagrams to model workflows and business processes
 3. [Class Diagrams](./class-diagram) - Creating a diagram for credit card management system
 4. [State Diagrams](./state-diagram) - Model object lifecycle and behavior with state transition diagrams
-5. Sequence Diagrams (Coming Soon)
+5. [Sequence Diagrams](./seqeunce-diagram) - Visualize object interactions and message exchanges over time
 6. Component Diagrams (Coming Soon)
 7. Deployment Diagrams (Coming Soon)
 
