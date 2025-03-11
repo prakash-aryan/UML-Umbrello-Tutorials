@@ -1,0 +1,24 @@
+{
+  "id": "intro",
+  "title": "Umbrello 5 UML Diagram Tutorials",
+  "description": "A collection of tutorials for creating UML diagrams using Umbrello 5. This repository aims to help users learn and master different types of UML diagrams through practical examples and step-by-step guides.",
+  "source": "@site/docs/intro.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/UML-Umbrello-Tutorials/docs/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/prakash-aryan/UML-Umbrello-Tutorials/tree/main/docs/intro.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1,
+    "slug": "/"
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Creating Use Case Diagrams with Umbrello 5: A Comprehensive Tutorial",
+    "permalink": "/UML-Umbrello-Tutorials/docs/use-case/"
+  }
+}

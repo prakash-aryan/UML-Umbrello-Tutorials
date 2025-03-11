@@ -1,0 +1,58 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/UML-Umbrello-Tutorials/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/UML-Umbrello-Tutorials/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "activity-diagram/index",
+              "path": "/UML-Umbrello-Tutorials/docs/activity-diagram/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "class-diagram/index",
+              "path": "/UML-Umbrello-Tutorials/docs/class-diagram/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "intro",
+              "path": "/UML-Umbrello-Tutorials/docs/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "seqeunce-diagram/index",
+              "path": "/UML-Umbrello-Tutorials/docs/seqeunce-diagram/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "state-diagram/index",
+              "path": "/UML-Umbrello-Tutorials/docs/state-diagram/",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "use-case/index",
+              "path": "/UML-Umbrello-Tutorials/docs/use-case/",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/UML-Umbrello-Tutorials/docs/",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

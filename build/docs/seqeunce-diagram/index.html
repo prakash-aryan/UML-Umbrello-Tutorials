@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-seqeunce-diagram/index" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Creating Sequence Diagrams with Umbrello 5 | UML Umbrello Tutorials</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://prakash-aryan.github.io/UML-Umbrello-Tutorials/img/uml-logo.svg"><meta data-rh="true" name="twitter:image" content="https://prakash-aryan.github.io/UML-Umbrello-Tutorials/img/uml-logo.svg"><meta data-rh="true" property="og:url" content="https://prakash-aryan.github.io/UML-Umbrello-Tutorials/docs/seqeunce-diagram/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Creating Sequence Diagrams with Umbrello 5 | UML Umbrello Tutorials"><meta data-rh="true" name="description" content="Table of Contents"><meta data-rh="true" property="og:description" content="Table of Contents"><link data-rh="true" rel="icon" href="/UML-Umbrello-Tutorials/img/uml-logo.svg"><link data-rh="true" rel="canonical" href="https://prakash-aryan.github.io/UML-Umbrello-Tutorials/docs/seqeunce-diagram/"><link data-rh="true" rel="alternate" href="https://prakash-aryan.github.io/UML-Umbrello-Tutorials/docs/seqeunce-diagram/" hreflang="en"><link data-rh="true" rel="alternate" href="https://prakash-aryan.github.io/UML-Umbrello-Tutorials/docs/seqeunce-diagram/" hreflang="x-default"><link rel="stylesheet" href="/UML-Umbrello-Tutorials/assets/css/styles.2a2cdd7e.css">
+<script src="/UML-Umbrello-Tutorials/assets/js/runtime~main.d50d651b.js" defer="defer"></script>
+<script src="/UML-Umbrello-Tutorials/assets/js/main.4ee95231.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/UML-Umbrello-Tutorials/img/uml-logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/UML-Umbrello-Tutorials/"><div class="navbar__logo"><img src="/UML-Umbrello-Tutorials/img/uml-logo.svg" alt="UML Umbrello Tutorials Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/UML-Umbrello-Tutorials/img/uml-logo.svg" alt="UML Umbrello Tutorials Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">UML Umbrello Tutorials</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/UML-Umbrello-Tutorials/docs/">Tutorials</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/prakash-aryan/UML-Umbrello-Tutorials" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/UML-Umbrello-Tutorials/docs/">Umbrello 5 UML Diagram Tutorials</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/UML-Umbrello-Tutorials/docs/use-case/">Use Case Diagrams</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/UML-Umbrello-Tutorials/docs/activity-diagram/">Activity Diagrams</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/UML-Umbrello-Tutorials/docs/class-diagram/">Class Diagrams</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/UML-Umbrello-Tutorials/docs/state-diagram/">State Diagrams</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/UML-Umbrello-Tutorials/docs/seqeunce-diagram/">Sequence Diagrams</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/UML-Umbrello-Tutorials/docs/seqeunce-diagram/">Creating Sequence Diagrams with Umbrello 5</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/UML-Umbrello-Tutorials/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Sequence Diagrams</span><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Creating Sequence Diagrams with Umbrello 5</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Creating Sequence Diagrams with Umbrello 5</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="table-of-contents">Table of Contents<a href="#table-of-contents" class="hash-link" aria-label="Direct link to Table of Contents" title="Direct link to Table of Contents">​</a></h2>
+<ol>
+<li><a href="#1-introduction-to-sequence-diagrams">Introduction to Sequence Diagrams</a></li>
+<li><a href="#2-problem-statement-food-ordering-system">Problem Statement: Food Ordering System</a></li>
+<li><a href="#3-getting-started">Getting Started</a></li>
+<li><a href="#4-creating-object-lifelines">Creating Object Lifelines</a></li>
+<li><a href="#5-adding-synchronous-messages">Adding Synchronous Messages</a></li>
+<li><a href="#6-adding-asynchronous-messages">Adding Asynchronous Messages</a></li>
+<li><a href="#7-working-with-activation-boxes">Working with Activation Boxes</a></li>
+<li><a href="#8-managing-destruction">Managing Destruction</a></li>
+<li><a href="#9-saving-and-exporting">Saving and Exporting</a></li>
+<li><a href="#10-keyboard-shortcuts">Keyboard Shortcuts</a></li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-introduction-to-sequence-diagrams">1. Introduction to Sequence Diagrams<a href="#1-introduction-to-sequence-diagrams" class="hash-link" aria-label="Direct link to 1. Introduction to Sequence Diagrams" title="Direct link to 1. Introduction to Sequence Diagrams">​</a></h2>
+<p>Sequence diagrams in UML visualize the interactions between objects over time. They are particularly useful for:</p>
+<ul>
+<li>Showing the sequence of messages/method calls between objects</li>
+<li>Illustrating how processes operate with one another</li>
+<li>Documenting runtime scenarios in a graphical manner</li>
+<li>Representing complex interactions in a time-ordered manner</li>
+</ul>
+<p>Key components of sequence diagrams include:</p>
+<ul>
+<li><strong>Lifelines</strong>: Represent individual objects or components in the system</li>
+<li><strong>Messages</strong>: Show interactions between lifelines</li>
+<li><strong>Activation Boxes</strong>: Indicate when an object is actively processing</li>
+<li><strong>Return Messages</strong>: Represent the completion of processing and return of control</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Final Diagram" src="/UML-Umbrello-Tutorials/assets/images/0-FinalDiagram-df251ceec60b59b2ce349590a7fd8dff.png" width="1366" height="714" class="img_ev3q">
+<em>Completed sequence diagram for a food ordering system</em></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-problem-statement-food-ordering-system">2. Problem Statement: Food Ordering System<a href="#2-problem-statement-food-ordering-system" class="hash-link" aria-label="Direct link to 2. Problem Statement: Food Ordering System" title="Direct link to 2. Problem Statement: Food Ordering System">​</a></h2>
+<p>In this tutorial, we&#x27;ll create a sequence diagram for an online food ordering system with the following components:</p>
+<ul>
+<li><strong>Customer</strong>: Places orders and receives confirmations</li>
+<li><strong>App</strong>: Manages the ordering process</li>
+<li><strong>Restaurant</strong>: Provides availability information and receives order notifications</li>
+<li><strong>Payment</strong>: Processes transactions</li>
+<li><strong>Analytics</strong>: Logs order data for business intelligence</li>
+</ul>
+<p>The sequence includes:</p>
+<ol>
+<li>Customer placing an order</li>
+<li>App checking restaurant availability</li>
+<li>Processing payment</li>
+<li>Notifying the restaurant (asynchronous)</li>
+<li>Logging order data (asynchronous)</li>
+</ol>
+<p>This example demonstrates both synchronous operations (which require waiting for responses) and asynchronous operations (which continue without waiting).</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-getting-started">3. Getting Started<a href="#3-getting-started" class="hash-link" aria-label="Direct link to 3. Getting Started" title="Direct link to 3. Getting Started">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="creating-a-new-sequence-diagram">Creating a New Sequence Diagram<a href="#creating-a-new-sequence-diagram" class="hash-link" aria-label="Direct link to Creating a New Sequence Diagram" title="Direct link to Creating a New Sequence Diagram">​</a></h3>
+<ol>
+<li>
+<p>Launch Umbrello 5</p>
+</li>
+<li>
+<p>Go to Diagram → New → Sequence Diagram
+<img decoding="async" loading="lazy" alt="Create New Sequence Diagram" src="/UML-Umbrello-Tutorials/assets/images/1-CreateNewSequenceDiagram-f5c918bd0f8186e293d02fd08caafd02.png" width="756" height="539" class="img_ev3q">
+<em>Creating a new sequence diagram</em></p>
+</li>
+<li>
+<p>Name your diagram (e.g., &quot;Food Ordering System Sequence&quot;)</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-creating-object-lifelines">4. Creating Object Lifelines<a href="#4-creating-object-lifelines" class="hash-link" aria-label="Direct link to 4. Creating Object Lifelines" title="Direct link to 4. Creating Object Lifelines">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="adding-the-first-object">Adding the First Object<a href="#adding-the-first-object" class="hash-link" aria-label="Direct link to Adding the First Object" title="Direct link to Adding the First Object">​</a></h3>
+<ol>
+<li>Right-click on the blank diagram</li>
+<li>Select New → Object</li>
+<li>Click on the diagram where you want to place it
+<img decoding="async" loading="lazy" alt="Create New Object" src="/UML-Umbrello-Tutorials/assets/images/2-CreateNewObject-678891e535a273fbb35fcefac16f3a32.png" width="1919" height="1079" class="img_ev3q">
+<em>Creating a new object</em></li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="setting-object-properties">Setting Object Properties<a href="#setting-object-properties" class="hash-link" aria-label="Direct link to Setting Object Properties" title="Direct link to Setting Object Properties">​</a></h3>
+<ol>
+<li>
+<p>Right-click on the newly created object</p>
+</li>
+<li>
+<p>Select Properties
+<img decoding="async" loading="lazy" alt="Open Properties" src="/UML-Umbrello-Tutorials/assets/images/3-OpenProps-c9a3ed00c68f78a9a375f2c6c56b1970.png" width="1919" height="1079" class="img_ev3q">
+<em>Opening object properties</em></p>
+</li>
+<li>
+<p>Change the class name to &quot;Customer&quot;</p>
+</li>
+<li>
+<p>Check &quot;Draw as actor&quot; to represent a user
+<img decoding="async" loading="lazy" alt="Select Actor" src="/UML-Umbrello-Tutorials/assets/images/4-SelectActor-3284e6f4d6c03946677184d83fad35b7.png" width="443" height="446" class="img_ev3q">
+<em>Setting an object as an actor</em></p>
+</li>
+<li>
+<p>Click OK to apply changes</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="adding-more-objects">Adding More Objects<a href="#adding-more-objects" class="hash-link" aria-label="Direct link to Adding More Objects" title="Direct link to Adding More Objects">​</a></h3>
+<ol>
+<li>Repeat the process to add more objects:<!-- -->
+<ul>
+<li>App</li>
+<li>Restaurant</li>
+<li>Payment</li>
+<li>Analytics</li>
+</ul>
+</li>
+<li>Position them in a horizontal row at the top of the diagram
+<img decoding="async" loading="lazy" alt="Add More Objects" src="/UML-Umbrello-Tutorials/assets/images/5-AddMoreObjects-c9f7fb7b319e26c5cf57d11491cb1362.png" width="1604" height="924" class="img_ev3q">
+<em>Adding more object lifelines</em></li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-adding-synchronous-messages">5. Adding Synchronous Messages<a href="#5-adding-synchronous-messages" class="hash-link" aria-label="Direct link to 5. Adding Synchronous Messages" title="Direct link to 5. Adding Synchronous Messages">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="creating-the-first-synchronous-message">Creating the First Synchronous Message<a href="#creating-the-first-synchronous-message" class="hash-link" aria-label="Direct link to Creating the First Synchronous Message" title="Direct link to Creating the First Synchronous Message">​</a></h3>
+<ol>
+<li>
+<p>Click on the Synchronous Message tool in the toolbar</p>
+</li>
+<li>
+<p>Click and drag from the source object (Customer) to the target object (App)
+<img decoding="async" loading="lazy" alt="Create Synchronous Message" src="/UML-Umbrello-Tutorials/assets/images/6-CreateSM-b859ab81113b177d356ca22cf86651a6.png" width="1620" height="971" class="img_ev3q">
+<em>Creating a synchronous message</em></p>
+</li>
+<li>
+<p>In the dialog that appears, enter &quot;Place Order&quot; as the custom operation
+<img decoding="async" loading="lazy" alt="Synchronous Message Operations" src="data:image/png;base64,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" width="458" height="190" class="img_ev3q">
+<em>Setting the message name</em></p>
+</li>
+<li>
+<p>Select the Label tool, and then add a return message
+<img decoding="async" loading="lazy" alt="Add Label" src="/UML-Umbrello-Tutorials/assets/images/8-AddLabel-2dbb77a827b35104b04d8609c6b2f725.png" width="1919" height="1079" class="img_ev3q">
+<em>Message with label added</em></p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="adding-more-synchronous-messages">Adding More Synchronous Messages<a href="#adding-more-synchronous-messages" class="hash-link" aria-label="Direct link to Adding More Synchronous Messages" title="Direct link to Adding More Synchronous Messages">​</a></h3>
+<ol>
+<li>Add the following synchronous messages in sequence:<!-- -->
+<ul>
+<li>From App to Restaurant: &quot;Check Availability&quot;</li>
+<li>From Restaurant to App: &quot;Confirm Available&quot;</li>
+<li>From App to Payment: &quot;Process Payment&quot;</li>
+<li>From Payment to App: &quot;Payment Confirmed&quot;</li>
+</ul>
+<img decoding="async" loading="lazy" alt="Add More Synchronous Messages" src="/UML-Umbrello-Tutorials/assets/images/9-AddMoreSync-a4fe305bf58c5be9a877f3f8f3d5529c.png" width="1919" height="1079" class="img_ev3q">
+<em>Adding multiple synchronous messages</em></li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-adding-asynchronous-messages">6. Adding Asynchronous Messages<a href="#6-adding-asynchronous-messages" class="hash-link" aria-label="Direct link to 6. Adding Asynchronous Messages" title="Direct link to 6. Adding Asynchronous Messages">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="creating-asynchronous-messages">Creating Asynchronous Messages<a href="#creating-asynchronous-messages" class="hash-link" aria-label="Direct link to Creating Asynchronous Messages" title="Direct link to Creating Asynchronous Messages">​</a></h3>
+<ol>
+<li>In Umbrello, asynchronous messages don&#x27;t require a return message</li>
+<li>Click on the Asynchronous Message tool in the toolbar</li>
+<li>Click and drag from App to Restaurant</li>
+<li>Enter &quot;New Order Notification&quot; as the custom operation
+<img decoding="async" loading="lazy" alt="Add Asynchronous Message" src="/UML-Umbrello-Tutorials/assets/images/11-AddAsync-0c197263b1367505799bc00f0a2eac47.png" width="1919" height="1079" class="img_ev3q">
+<em>Creating an asynchronous message</em></li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="adding-another-asynchronous-message">Adding Another Asynchronous Message<a href="#adding-another-asynchronous-message" class="hash-link" aria-label="Direct link to Adding Another Asynchronous Message" title="Direct link to Adding Another Asynchronous Message">​</a></h3>
+<ol>
+<li>Add another asynchronous message from App to Analytics</li>
+<li>Enter &quot;Log Order Data&quot; as the custom operation
+<img decoding="async" loading="lazy" alt="Add Another Asynchronous Message" src="/UML-Umbrello-Tutorials/assets/images/12-AddAnotherAsnyc-590fafdd9ec3e2272c87b2488c5ad6dd.png" width="1919" height="1079" class="img_ev3q">
+<em>Adding a second asynchronous message</em></li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="7-working-with-activation-boxes">7. Working with Activation Boxes<a href="#7-working-with-activation-boxes" class="hash-link" aria-label="Direct link to 7. Working with Activation Boxes" title="Direct link to 7. Working with Activation Boxes">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="adjusting-activation-boxes">Adjusting Activation Boxes<a href="#adjusting-activation-boxes" class="hash-link" aria-label="Direct link to Adjusting Activation Boxes" title="Direct link to Adjusting Activation Boxes">​</a></h3>
+<ol>
+<li>
+<p>Activation boxes (yellow rectangles) are automatically created for synchronous messages</p>
+</li>
+<li>
+<p>To adjust their size:</p>
+<ul>
+<li>Select the activation box</li>
+<li>Drag the bottom edge to resize it</li>
+</ul>
+<p><img decoding="async" loading="lazy" alt="Adjust Activation Boxes" src="/UML-Umbrello-Tutorials/assets/images/10-Adjust-d91645065c20d1acf7c4e4ab0d1eb2fe.gif" width="3840" height="2160" class="img_ev3q">
+<em>Adjusting the size and position of messages and activation boxes</em></p>
+</li>
+<li>
+<p>Position boxes to clearly show the sequence of operations:</p>
+<ul>
+<li>Place later messages below earlier ones</li>
+<li>Ensure proper spacing for readability</li>
+<li>Align related messages to show their relationships</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="8-managing-destruction">8. Managing Destruction<a href="#8-managing-destruction" class="hash-link" aria-label="Direct link to 8. Managing Destruction" title="Direct link to 8. Managing Destruction">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="working-with-destruction-markers">Working with Destruction Markers<a href="#working-with-destruction-markers" class="hash-link" aria-label="Direct link to Working with Destruction Markers" title="Direct link to Working with Destruction Markers">​</a></h3>
+<ol>
+<li>In some cases, you may want to show object destruction</li>
+<li>To enable this option, right-click on an object and select Properties</li>
+<li>Check &quot;Show destruction&quot; to display an X at the end of the lifeline
+<img decoding="async" loading="lazy" alt="Select Destruction" src="/UML-Umbrello-Tutorials/assets/images/13-SelectDestruction-bf17e755798dc59fa3e5367faf907544.png" width="446" height="460" class="img_ev3q">
+<em>Enabling destruction display</em></li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="hiding-destruction-markers">Hiding Destruction Markers<a href="#hiding-destruction-markers" class="hash-link" aria-label="Direct link to Hiding Destruction Markers" title="Direct link to Hiding Destruction Markers">​</a></h3>
+<ol>
+<li>
+<p>If you don&#x27;t need to show destruction, you can hide these markers</p>
+</li>
+<li>
+<p>Right-click on the object and select &quot;Hide destruction box&quot;
+<img decoding="async" loading="lazy" alt="Hide Destruction" src="/UML-Umbrello-Tutorials/assets/images/14-HideDesc-1d7a04a65b32b7115625281c14074f17.png" width="1066" height="550" class="img_ev3q">
+<em>Hiding destruction markers</em></p>
+</li>
+<li>
+<p>This is useful when modeling services or components that continue to exist after the interaction</p>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="9-saving-and-exporting">9. Saving and Exporting<a href="#9-saving-and-exporting" class="hash-link" aria-label="Direct link to 9. Saving and Exporting" title="Direct link to 9. Saving and Exporting">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="saving-your-work">Saving Your Work<a href="#saving-your-work" class="hash-link" aria-label="Direct link to Saving Your Work" title="Direct link to Saving Your Work">​</a></h3>
+<ol>
+<li>Go to File → Save As</li>
+<li>Choose a location and filename</li>
+<li>Select .xmi format</li>
+<li>Click Save</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="exporting-as-an-image">Exporting as an Image<a href="#exporting-as-an-image" class="hash-link" aria-label="Direct link to Exporting as an Image" title="Direct link to Exporting as an Image">​</a></h3>
+<ol>
+<li>Go to Diagram → Export as Picture</li>
+<li>Select your preferred format (PNG, SVG, etc.)</li>
+<li>Choose location and save</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="10-keyboard-shortcuts">10. Keyboard Shortcuts<a href="#10-keyboard-shortcuts" class="hash-link" aria-label="Direct link to 10. Keyboard Shortcuts" title="Direct link to 10. Keyboard Shortcuts">​</a></h2>
+<ul>
+<li>Ctrl+S: Save</li>
+<li>Ctrl+Z: Undo</li>
+<li>Ctrl+Y: Redo</li>
+<li>Delete: Remove selected element</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="additional-tips-for-working-with-sequence-diagrams">Additional Tips for Working with Sequence Diagrams<a href="#additional-tips-for-working-with-sequence-diagrams" class="hash-link" aria-label="Direct link to Additional Tips for Working with Sequence Diagrams" title="Direct link to Additional Tips for Working with Sequence Diagrams">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="message-types">Message Types<a href="#message-types" class="hash-link" aria-label="Direct link to Message Types" title="Direct link to Message Types">​</a></h3>
+<ul>
+<li><strong>Synchronous Messages</strong>: Show operations where the sender waits for a response</li>
+<li><strong>Asynchronous Messages</strong>: Show operations where the sender continues without waiting</li>
+<li><strong>Reply/Return Messages</strong>: Show the return of control (often with return values)</li>
+<li><strong>Creation Messages</strong>: Show the creation of objects during the sequence</li>
+<li><strong>Destruction Messages</strong>: Show when objects are destroyed</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="best-practices">Best Practices<a href="#best-practices" class="hash-link" aria-label="Direct link to Best Practices" title="Direct link to Best Practices">​</a></h3>
+<ul>
+<li>Arrange lifelines from left to right based on their first interaction in the sequence</li>
+<li>Keep the diagram focused on a specific scenario or use case</li>
+<li>Use descriptive message names that indicate the action being performed</li>
+<li>Maintain proper time sequence (messages flow from top to bottom)</li>
+<li>Group related messages with proper spacing for clarity</li>
+<li>Add notes or comments for complex interactions</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/prakash-aryan/UML-Umbrello-Tutorials/tree/main/docs/seqeunce-diagram/index.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/UML-Umbrello-Tutorials/docs/state-diagram/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Creating State Diagrams with Umbrello 5</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#table-of-contents" class="table-of-contents__link toc-highlight">Table of Contents</a></li><li><a href="#1-introduction-to-sequence-diagrams" class="table-of-contents__link toc-highlight">1. Introduction to Sequence Diagrams</a></li><li><a href="#2-problem-statement-food-ordering-system" class="table-of-contents__link toc-highlight">2. Problem Statement: Food Ordering System</a></li><li><a href="#3-getting-started" class="table-of-contents__link toc-highlight">3. Getting Started</a><ul><li><a href="#creating-a-new-sequence-diagram" class="table-of-contents__link toc-highlight">Creating a New Sequence Diagram</a></li></ul></li><li><a href="#4-creating-object-lifelines" class="table-of-contents__link toc-highlight">4. Creating Object Lifelines</a><ul><li><a href="#adding-the-first-object" class="table-of-contents__link toc-highlight">Adding the First Object</a></li><li><a href="#setting-object-properties" class="table-of-contents__link toc-highlight">Setting Object Properties</a></li><li><a href="#adding-more-objects" class="table-of-contents__link toc-highlight">Adding More Objects</a></li></ul></li><li><a href="#5-adding-synchronous-messages" class="table-of-contents__link toc-highlight">5. Adding Synchronous Messages</a><ul><li><a href="#creating-the-first-synchronous-message" class="table-of-contents__link toc-highlight">Creating the First Synchronous Message</a></li><li><a href="#adding-more-synchronous-messages" class="table-of-contents__link toc-highlight">Adding More Synchronous Messages</a></li></ul></li><li><a href="#6-adding-asynchronous-messages" class="table-of-contents__link toc-highlight">6. Adding Asynchronous Messages</a><ul><li><a href="#creating-asynchronous-messages" class="table-of-contents__link toc-highlight">Creating Asynchronous Messages</a></li><li><a href="#adding-another-asynchronous-message" class="table-of-contents__link toc-highlight">Adding Another Asynchronous Message</a></li></ul></li><li><a href="#7-working-with-activation-boxes" class="table-of-contents__link toc-highlight">7. Working with Activation Boxes</a><ul><li><a href="#adjusting-activation-boxes" class="table-of-contents__link toc-highlight">Adjusting Activation Boxes</a></li></ul></li><li><a href="#8-managing-destruction" class="table-of-contents__link toc-highlight">8. Managing Destruction</a><ul><li><a href="#working-with-destruction-markers" class="table-of-contents__link toc-highlight">Working with Destruction Markers</a></li><li><a href="#hiding-destruction-markers" class="table-of-contents__link toc-highlight">Hiding Destruction Markers</a></li></ul></li><li><a href="#9-saving-and-exporting" class="table-of-contents__link toc-highlight">9. Saving and Exporting</a><ul><li><a href="#saving-your-work" class="table-of-contents__link toc-highlight">Saving Your Work</a></li><li><a href="#exporting-as-an-image" class="table-of-contents__link toc-highlight">Exporting as an Image</a></li></ul></li><li><a href="#10-keyboard-shortcuts" class="table-of-contents__link toc-highlight">10. Keyboard Shortcuts</a></li><li><a href="#additional-tips-for-working-with-sequence-diagrams" class="table-of-contents__link toc-highlight">Additional Tips for Working with Sequence Diagrams</a><ul><li><a href="#message-types" class="table-of-contents__link toc-highlight">Message Types</a></li><li><a href="#best-practices" class="table-of-contents__link toc-highlight">Best Practices</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Made by <a href="https://prakasharyan.com/">Prakash Aryan</a></div></div></div></footer></div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+export default {
+  "0e384e19": [() => import(/* webpackChunkName: "0e384e19" */ "@site/docs/intro.md"), "@site/docs/intro.md", require.resolveWeak("@site/docs/intro.md")],
+  "17896441": [() => import(/* webpackChunkName: "17896441" */ "@theme/DocItem"), "@theme/DocItem", require.resolveWeak("@theme/DocItem")],
+  "4cd8c2e7": [() => import(/* webpackChunkName: "4cd8c2e7" */ "@site/docs/class-diagram/index.md"), "@site/docs/class-diagram/index.md", require.resolveWeak("@site/docs/class-diagram/index.md")],
+  "5e95c892": [() => import(/* webpackChunkName: "5e95c892" */ "@theme/DocsRoot"), "@theme/DocsRoot", require.resolveWeak("@theme/DocsRoot")],
+  "5e9f5e1a": [() => import(/* webpackChunkName: "5e9f5e1a" */ "@generated/docusaurus.config"), "@generated/docusaurus.config", require.resolveWeak("@generated/docusaurus.config")],
+  "6ab53c3d": [() => import(/* webpackChunkName: "6ab53c3d" */ "@site/docs/state-diagram/index.md"), "@site/docs/state-diagram/index.md", require.resolveWeak("@site/docs/state-diagram/index.md")],
+  "74b89851": [() => import(/* webpackChunkName: "74b89851" */ "@site/docs/seqeunce-diagram/index.md"), "@site/docs/seqeunce-diagram/index.md", require.resolveWeak("@site/docs/seqeunce-diagram/index.md")],
+  "99d4bdba": [() => import(/* webpackChunkName: "99d4bdba" */ "@site/docs/activity-diagram/index.md"), "@site/docs/activity-diagram/index.md", require.resolveWeak("@site/docs/activity-diagram/index.md")],
+  "a7456010": [() => import(/* webpackChunkName: "a7456010" */ "@generated/docusaurus-plugin-content-pages/default/__plugin.json"), "@generated/docusaurus-plugin-content-pages/default/__plugin.json", require.resolveWeak("@generated/docusaurus-plugin-content-pages/default/__plugin.json")],
+  "a7bd4aaa": [() => import(/* webpackChunkName: "a7bd4aaa" */ "@theme/DocVersionRoot"), "@theme/DocVersionRoot", require.resolveWeak("@theme/DocVersionRoot")],
+  "a94703ab": [() => import(/* webpackChunkName: "a94703ab" */ "@theme/DocRoot"), "@theme/DocRoot", require.resolveWeak("@theme/DocRoot")],
+  "aba21aa0": [() => import(/* webpackChunkName: "aba21aa0" */ "@generated/docusaurus-plugin-content-docs/default/__plugin.json"), "@generated/docusaurus-plugin-content-docs/default/__plugin.json", require.resolveWeak("@generated/docusaurus-plugin-content-docs/default/__plugin.json")],
+  "c13197ed": [() => import(/* webpackChunkName: "c13197ed" */ "@site/docs/use-case/index.md"), "@site/docs/use-case/index.md", require.resolveWeak("@site/docs/use-case/index.md")],
+  "c4f5d8e4": [() => import(/* webpackChunkName: "c4f5d8e4" */ "@site/src/pages/index.js"), "@site/src/pages/index.js", require.resolveWeak("@site/src/pages/index.js")],
+  "e64752a6": [() => import(/* webpackChunkName: "e64752a6" */ "@generated/docusaurus-plugin-content-docs/default/p/uml-umbrello-tutorials-docs-b93.json"), "@generated/docusaurus-plugin-content-docs/default/p/uml-umbrello-tutorials-docs-b93.json", require.resolveWeak("@generated/docusaurus-plugin-content-docs/default/p/uml-umbrello-tutorials-docs-b93.json")],};

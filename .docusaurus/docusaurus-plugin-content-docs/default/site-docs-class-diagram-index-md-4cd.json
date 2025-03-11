@@ -1,0 +1,27 @@
+{
+  "id": "class-diagram/index",
+  "title": "Creating Class Diagrams with Umbrello 5: Guide",
+  "description": "Table of Contents",
+  "source": "@site/docs/class-diagram/index.md",
+  "sourceDirName": "class-diagram",
+  "slug": "/class-diagram/",
+  "permalink": "/UML-Umbrello-Tutorials/docs/class-diagram/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/prakash-aryan/UML-Umbrello-Tutorials/tree/main/docs/class-diagram/index.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Creating Activity Diagrams with Umbrello 5",
+    "permalink": "/UML-Umbrello-Tutorials/docs/activity-diagram/"
+  },
+  "next": {
+    "title": "Creating State Diagrams with Umbrello 5",
+    "permalink": "/UML-Umbrello-Tutorials/docs/state-diagram/"
+  }
+}
