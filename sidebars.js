@@ -29,6 +29,11 @@ const sidebars = {
       label: 'State Diagrams',
       items: ['state-diagram/index'],
     },
+    {
+      type: 'category',
+      label: 'Sequence Diagrams',
+      items: ['seqeunce-diagram/index'],
+    },
   ],
 };
 

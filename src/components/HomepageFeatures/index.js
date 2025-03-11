@@ -44,6 +44,16 @@ const FeatureList = [
     ),
     link: '/docs/state-diagram'
   },
+  {
+    title: 'Sequence Diagrams',
+    Svg: require('@site/static/img/sequence-diagram.svg').default,
+    description: (
+      <>
+        Visualize interactions between objects over time and understand the flow of method calls.
+      </>
+    ),
+    link: '/docs/seqeunce-diagram'
+  },
 ];
 
 function Feature({Svg, title, description, link}) {
