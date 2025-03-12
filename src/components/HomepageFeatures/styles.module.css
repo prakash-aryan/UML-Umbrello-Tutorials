@@ -36,4 +36,5 @@
   justify-content: center;
   margin-top: auto;
   padding-top: 1.5rem;
+  padding-bottom: 1rem; /* Added bottom padding */
 }
