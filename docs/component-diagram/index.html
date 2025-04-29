@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-component-diagram/index" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Creating Component Diagrams with Umbrello 5 | UML Umbrello Tutorials</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://prakash-aryan.github.io/UML-Umbrello-Tutorials/img/uml-logo.svg"><meta data-rh="true" name="twitter:image" content="https://prakash-aryan.github.io/UML-Umbrello-Tutorials/img/uml-logo.svg"><meta data-rh="true" property="og:url" content="https://prakash-aryan.github.io/UML-Umbrello-Tutorials/docs/component-diagram/"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Creating Component Diagrams with Umbrello 5 | UML Umbrello Tutorials"><meta data-rh="true" name="description" content="Table of Contents"><meta data-rh="true" property="og:description" content="Table of Contents"><link data-rh="true" rel="icon" href="/UML-Umbrello-Tutorials/img/uml-logo.svg"><link data-rh="true" rel="canonical" href="https://prakash-aryan.github.io/UML-Umbrello-Tutorials/docs/component-diagram/"><link data-rh="true" rel="alternate" href="https://prakash-aryan.github.io/UML-Umbrello-Tutorials/docs/component-diagram/" hreflang="en"><link data-rh="true" rel="alternate" href="https://prakash-aryan.github.io/UML-Umbrello-Tutorials/docs/component-diagram/" hreflang="x-default"><link rel="stylesheet" href="/UML-Umbrello-Tutorials/assets/css/styles.1a4bd13e.css">
+<script src="/UML-Umbrello-Tutorials/assets/js/runtime~main.88a9253c.js" defer="defer"></script>
+<script src="/UML-Umbrello-Tutorials/assets/js/main.7205109c.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/UML-Umbrello-Tutorials/img/uml-logo.svg"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/UML-Umbrello-Tutorials/"><div class="navbar__logo"><img src="/UML-Umbrello-Tutorials/img/uml-logo.svg" alt="UML Umbrello Tutorials Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/UML-Umbrello-Tutorials/img/uml-logo.svg" alt="UML Umbrello Tutorials Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">UML Umbrello Tutorials</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/UML-Umbrello-Tutorials/docs/">Tutorials</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/prakash-aryan/UML-Umbrello-Tutorials" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/UML-Umbrello-Tutorials/docs/">Umbrello 5 UML Diagram Tutorials</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/UML-Umbrello-Tutorials/docs/use-case/">Use Case Diagrams</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/UML-Umbrello-Tutorials/docs/activity-diagram/">Activity Diagrams</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/UML-Umbrello-Tutorials/docs/class-diagram/">Class Diagrams</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/UML-Umbrello-Tutorials/docs/state-diagram/">State Diagrams</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/UML-Umbrello-Tutorials/docs/seqeunce-diagram/">Sequence Diagrams</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/UML-Umbrello-Tutorials/docs/component-diagram/">Component Diagrams</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/UML-Umbrello-Tutorials/docs/component-diagram/">Creating Component Diagrams with Umbrello 5</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/UML-Umbrello-Tutorials/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Component Diagrams</span><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Creating Component Diagrams with Umbrello 5</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Creating Component Diagrams with Umbrello 5</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="table-of-contents">Table of Contents<a href="#table-of-contents" class="hash-link" aria-label="Direct link to Table of Contents" title="Direct link to Table of Contents">​</a></h2>
+<ol>
+<li><a href="#1-introduction-to-component-diagrams">Introduction to Component Diagrams</a></li>
+<li><a href="#2-understanding-component-diagram-elements">Understanding Component Diagram Elements</a></li>
+<li><a href="#3-problem-statement-e-commerce-system">Problem Statement: E-Commerce System</a></li>
+<li><a href="#4-getting-started">Getting Started</a></li>
+<li><a href="#5-creating-components">Creating Components</a></li>
+<li><a href="#6-adding-ports">Adding Ports</a></li>
+<li><a href="#7-creating-interfaces">Creating Interfaces</a></li>
+<li><a href="#8-creating-relationships">Creating Relationships</a></li>
+<li><a href="#9-finalizing-the-diagram">Finalizing the Diagram</a></li>
+<li><a href="#10-saving-and-exporting">Saving and Exporting</a></li>
+<li><a href="#11-best-practices">Best Practices</a></li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-introduction-to-component-diagrams">1. Introduction to Component Diagrams<a href="#1-introduction-to-component-diagrams" class="hash-link" aria-label="Direct link to 1. Introduction to Component Diagrams" title="Direct link to 1. Introduction to Component Diagrams">​</a></h2>
+<p>Component diagrams in UML represent the physical aspects of an object-oriented software system. They illustrate the structure of the software components, their interfaces, and the dependencies between them.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="key-benefits-of-component-diagrams">Key Benefits of Component Diagrams<a href="#key-benefits-of-component-diagrams" class="hash-link" aria-label="Direct link to Key Benefits of Component Diagrams" title="Direct link to Key Benefits of Component Diagrams">​</a></h3>
+<ul>
+<li>Visualize the high-level structure of complex systems</li>
+<li>Identify component dependencies and interfaces</li>
+<li>Model replaceable parts of a system</li>
+<li>Support component-based development</li>
+<li>Facilitate software reuse and maintenance</li>
+</ul>
+<p>Component diagrams are particularly useful during the implementation phase of development, as they help bridge the gap between design and actual code structure.</p>
+<p><img decoding="async" loading="lazy" alt="Final Component Diagram" src="/UML-Umbrello-Tutorials/assets/images/16-FinalDiagram-f458258e5f4209bc4130f31155e257e5.png" width="1286" height="767" class="img_ev3q"></p>
+<p><em>Final component diagram we&#x27;ll create in this tutorial</em></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-understanding-component-diagram-elements">2. Understanding Component Diagram Elements<a href="#2-understanding-component-diagram-elements" class="hash-link" aria-label="Direct link to 2. Understanding Component Diagram Elements" title="Direct link to 2. Understanding Component Diagram Elements">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="components">Components<a href="#components" class="hash-link" aria-label="Direct link to Components" title="Direct link to Components">​</a></h3>
+<p>Components are modular, reusable, and replaceable parts of a system with well-defined interfaces. They represent:</p>
+<ul>
+<li>Executable code (libraries, applications)</li>
+<li>Runtime entities (processes)</li>
+<li>Development-time entities (source code)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="interfaces">Interfaces<a href="#interfaces" class="hash-link" aria-label="Direct link to Interfaces" title="Direct link to Interfaces">​</a></h3>
+<p>Interfaces define the contracts that components fulfill or require:</p>
+<ul>
+<li><strong>Provided Interface</strong> (lollipop symbol): Services the component offers to other components</li>
+<li><strong>Required Interface</strong> (socket symbol): Services the component needs from other components</li>
+</ul>
+<p><strong>Each interface must have a specific and unique name</strong> that indicates the service it provides or requires.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="ports">Ports<a href="#ports" class="hash-link" aria-label="Direct link to Ports" title="Direct link to Ports">​</a></h3>
+<p>Ports are interaction points between components and their environment:</p>
+<ul>
+<li>Define where interfaces are exposed</li>
+<li>Can have multiple interfaces attached</li>
+<li>Represent distinct interaction points</li>
+</ul>
+<p><strong>Every port must have a specific and unique name</strong> to describe its purpose.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="relationships">Relationships<a href="#relationships" class="hash-link" aria-label="Direct link to Relationships" title="Direct link to Relationships">​</a></h3>
+<ul>
+<li><strong>Dependency</strong>: One component depends on another</li>
+<li><strong>Delegation</strong>: A component delegates responsibilities to another component</li>
+<li><strong>Realization</strong>: A component implements an interface</li>
+<li><strong>Assembly</strong>: Connection between required and provided interfaces</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-problem-statement-e-commerce-system">3. Problem Statement: E-Commerce System<a href="#3-problem-statement-e-commerce-system" class="hash-link" aria-label="Direct link to 3. Problem Statement: E-Commerce System" title="Direct link to 3. Problem Statement: E-Commerce System">​</a></h2>
+<p>For this tutorial, we&#x27;ll create a component diagram for an e-commerce system with the following components:</p>
+<ul>
+<li><strong>ShoppingCart</strong>: Manages the user&#x27;s shopping items</li>
+<li><strong>Order</strong>: Processes and tracks customer orders</li>
+<li><strong>Product</strong>: Maintains product information</li>
+<li><strong>BackOrder</strong>: Handles out-of-stock items</li>
+<li><strong>Customer</strong>: Manages customer information</li>
+<li><strong>Organization</strong>: Handles business customer accounts</li>
+</ul>
+<p>We&#x27;ll model the interactions between these components using named interfaces to represent a complete ordering system.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-getting-started">4. Getting Started<a href="#4-getting-started" class="hash-link" aria-label="Direct link to 4. Getting Started" title="Direct link to 4. Getting Started">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="creating-a-new-component-diagram">Creating a New Component Diagram<a href="#creating-a-new-component-diagram" class="hash-link" aria-label="Direct link to Creating a New Component Diagram" title="Direct link to Creating a New Component Diagram">​</a></h3>
+<ol>
+<li>Launch Umbrello 5</li>
+<li>Go to <strong>Diagram → New → Component Diagram</strong></li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Create New Component Diagram" src="/UML-Umbrello-Tutorials/assets/images/1-CreateNewOne-e7d6106d4c141688860ae97e0ea484c5.png" width="647" height="316" class="img_ev3q"></p>
+<p><em>Creating a new component diagram</em></p>
+<ol start="3">
+<li>Enter a name for your diagram (e.g., &quot;E-Commerce System&quot;)</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-creating-components">5. Creating Components<a href="#5-creating-components" class="hash-link" aria-label="Direct link to 5. Creating Components" title="Direct link to 5. Creating Components">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="adding-the-first-component">Adding the First Component<a href="#adding-the-first-component" class="hash-link" aria-label="Direct link to Adding the First Component" title="Direct link to Adding the First Component">​</a></h3>
+<ol>
+<li>From the toolbar, select the <strong>Component</strong> tool</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Create New Component" src="/UML-Umbrello-Tutorials/assets/images/2-CreateNewComp-c1967b7f166cf903c074694dad2ae84b.png" width="670" height="336" class="img_ev3q"></p>
+<p><em>Selecting the component tool</em></p>
+<ol start="2">
+<li>Click on the diagram canvas to place the component</li>
+<li>A dialog will appear where you can name the component &quot;ShoppingCart&quot;</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Name Component" src="data:image/png;base64,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" width="364" height="149" class="img_ev3q"></p>
+<p><em>Naming the component</em></p>
+<ol start="4">
+<li>Right-click on the component and select <strong>Properties</strong></li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Open Properties" src="/UML-Umbrello-Tutorials/assets/images/4-OpenProps-cc315b0f404f0c1d8618342c0c62c151.png" width="408" height="463" class="img_ev3q"></p>
+<p><em>Opening component properties</em></p>
+<ol start="5">
+<li>In the <strong>General</strong> tab, ensure <code>&lt;&lt;Component&gt;&gt;</code> is displayed in the stereotype field</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Set Stereotype" src="/UML-Umbrello-Tutorials/assets/images/5-GiveStereotype-aea177a069f586e35cc354fca02e943a.png" width="664" height="563" class="img_ev3q"></p>
+<p><em>Setting component stereotype</em></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="creating-additional-components">Creating Additional Components<a href="#creating-additional-components" class="hash-link" aria-label="Direct link to Creating Additional Components" title="Direct link to Creating Additional Components">​</a></h3>
+<ol>
+<li>
+<p>Create the following components in their respective positions:</p>
+<ul>
+<li><strong>Order</strong>: Place in the center of the diagram</li>
+<li><strong>Product</strong>: Place below the Order component</li>
+<li><strong>BackOrder</strong>: Place at the top of the diagram</li>
+<li><strong>Customer</strong>: Place on the right side</li>
+<li><strong>Organization</strong>: Place below the Customer component</li>
+</ul>
+</li>
+<li>
+<p>For each component:</p>
+<ul>
+<li>Select the Component tool</li>
+<li>Click on the diagram</li>
+<li>Enter the component name</li>
+<li>Set properties as needed</li>
+</ul>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Create More Components" src="/UML-Umbrello-Tutorials/assets/images/6-CreateMoreDiagrams-ac1067700a3c81fb1d6906d3b403c7fd.png" width="1265" height="702" class="img_ev3q"></p>
+<p><em>Creating all components for the system</em></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-adding-ports">6. Adding Ports<a href="#6-adding-ports" class="hash-link" aria-label="Direct link to 6. Adding Ports" title="Direct link to 6. Adding Ports">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="adding-ports-to-components">Adding Ports to Components<a href="#adding-ports-to-components" class="hash-link" aria-label="Direct link to Adding Ports to Components" title="Direct link to Adding Ports to Components">​</a></h3>
+<ol>
+<li><strong>To add a port, right-click on the component and select New → Port</strong></li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Creating Ports" src="/UML-Umbrello-Tutorials/assets/images/7-CreatingPorts-673929a4ba7813e96c326b4fcca7cd62.png" width="411" height="347" class="img_ev3q"></p>
+<p><em>Adding a port to a component</em></p>
+<ol start="2">
+<li>Click where you want to place the port on the component boundary</li>
+<li>A small square will appear on the component boundary</li>
+<li><strong>Right-click on the port and select Properties</strong></li>
+<li><strong>Enter the specific port name:</strong></li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Naming Port" src="/UML-Umbrello-Tutorials/assets/images/8-namingPort-af557dd329fcd8b2eee2599e591dfec6.png" width="719" height="223" class="img_ev3q"></p>
+<p><em>Naming a port</em></p>
+<ol start="6">
+<li>Add the following ports to each component:<!-- -->
+<ul>
+<li>ShoppingCart: &quot;CartAccessPort&quot;</li>
+<li>Order: &quot;OrderEntryPort&quot; (left side), &quot;ProductPort&quot; (bottom), &quot;CustomerPort&quot; (right)</li>
+<li>Product: &quot;CatalogPort&quot;</li>
+<li>BackOrder: &quot;InventoryPort&quot;</li>
+<li>Customer: &quot;ProfilePort&quot;</li>
+<li>Organization: &quot;MembershipPort&quot;</li>
+</ul>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Create More Ports" src="/UML-Umbrello-Tutorials/assets/images/9-CreateMorePorts-ca2b44c836ed0adaf8cfc89c54bc1809.png" width="1189" height="654" class="img_ev3q"></p>
+<p><em>Adding multiple ports to components</em></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="7-creating-interfaces">7. Creating Interfaces<a href="#7-creating-interfaces" class="hash-link" aria-label="Direct link to 7. Creating Interfaces" title="Direct link to 7. Creating Interfaces">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="creating-required-interfaces">Creating Required Interfaces<a href="#creating-required-interfaces" class="hash-link" aria-label="Direct link to Creating Required Interfaces" title="Direct link to Creating Required Interfaces">​</a></h3>
+<ol>
+<li><strong>To add a required interface, right-click on the component (or its port) and select New → Required Interface</strong></li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Create Required Interface" src="/UML-Umbrello-Tutorials/assets/images/10-CreateReqInterface-95f177d76601260b5c17d477ac470072.png" width="498" height="358" class="img_ev3q"></p>
+<p><em>Creating a required interface</em></p>
+<ol start="2">
+<li>
+<p>Click on the component or port where you want to place the interface</p>
+</li>
+<li>
+<p><strong>Name the required interfaces:</strong></p>
+<ul>
+<li>ShoppingCart: &quot;OrderEntry&quot;</li>
+<li>Order: &quot;OrderableItem&quot; and &quot;Person&quot;</li>
+<li>Customer: &quot;OrganizationAffiliation&quot;</li>
+</ul>
+</li>
+<li>
+<p>Adjust the position of required interfaces along the component edges</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Adjust Position of Required Interface" src="data:image/png;base64,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" width="342" height="124" class="img_ev3q"></p>
+<p><em>Adjusting the position of required interfaces</em></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="creating-provided-interfaces">Creating Provided Interfaces<a href="#creating-provided-interfaces" class="hash-link" aria-label="Direct link to Creating Provided Interfaces" title="Direct link to Creating Provided Interfaces">​</a></h3>
+<ol>
+<li><strong>To add a provided interface, right-click on the component (or its port) and select New → Provided Interface</strong></li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Create Provided Interface" src="/UML-Umbrello-Tutorials/assets/images/12-CreateProvInter-a06fca4ef362db3d67a4d801e38cd999.png" width="349" height="357" class="img_ev3q"></p>
+<p><em>Creating a provided interface</em></p>
+<ol start="2">
+<li>
+<p>Click on the component or port where you want to place the interface</p>
+</li>
+<li>
+<p><strong>Name the provided interfaces:</strong></p>
+<ul>
+<li>Order: &quot;OrderEntry&quot;</li>
+<li>Product: &quot;OrderableItem&quot;</li>
+<li>Customer: &quot;Person&quot;</li>
+<li>Organization: &quot;OrganizationAffiliation&quot;</li>
+<li>BackOrder: &quot;BackOrderProcessing&quot;</li>
+</ul>
+</li>
+<li>
+<p>Adjust the position of provided interfaces along the component edges</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Adjust Position of Provided Interface" src="data:image/png;base64,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" width="656" height="165" class="img_ev3q"></p>
+<p><em>Adjusting the position of provided interfaces</em></p>
+<ol start="5">
+<li>Continue adding all interfaces to complete the diagram</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Create More Interfaces" src="/UML-Umbrello-Tutorials/assets/images/14-CreateMoreInterfaces-c131f078aef462406e4e2a1b44ddce12.png" width="1258" height="676" class="img_ev3q"></p>
+<p><em>Adding all interfaces to the diagram</em></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="8-creating-relationships">8. Creating Relationships<a href="#8-creating-relationships" class="hash-link" aria-label="Direct link to 8. Creating Relationships" title="Direct link to 8. Creating Relationships">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="connecting-interfaces">Connecting Interfaces<a href="#connecting-interfaces" class="hash-link" aria-label="Direct link to Connecting Interfaces" title="Direct link to Connecting Interfaces">​</a></h3>
+<ol>
+<li>Connect the required and provided interfaces:<!-- -->
+<ul>
+<li>Select the <strong>Association</strong> tool from the toolbar</li>
+<li>Click on the required interface</li>
+<li>Drag to the matching provided interface</li>
+</ul>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Create Associations" src="/UML-Umbrello-Tutorials/assets/images/15-CreateAssociations-a4e869599fa76a7e1c46fc4aacd6cd7b.gif" width="800" height="419" class="img_ev3q"></p>
+<p><em>Connecting interfaces with associations</em></p>
+<ol start="2">
+<li>Create the following connections:<!-- -->
+<ul>
+<li>Connect &quot;OrderEntry&quot; from ShoppingCart to &quot;OrderEntry&quot; on Order</li>
+<li>Connect &quot;OrderableItem&quot; from Order to &quot;OrderableItem&quot; on Product</li>
+<li>Connect &quot;Person&quot; from Order to &quot;Person&quot; on Customer</li>
+<li>Connect &quot;OrganizationAffiliation&quot; from Customer to &quot;OrganizationAffiliation&quot; on Organization</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="9-finalizing-the-diagram">9. Finalizing the Diagram<a href="#9-finalizing-the-diagram" class="hash-link" aria-label="Direct link to 9. Finalizing the Diagram" title="Direct link to 9. Finalizing the Diagram">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="final-layout-adjustments">Final Layout Adjustments<a href="#final-layout-adjustments" class="hash-link" aria-label="Direct link to Final Layout Adjustments" title="Direct link to Final Layout Adjustments">​</a></h3>
+<ol>
+<li>
+<p>Review the entire diagram for clarity and completeness</p>
+</li>
+<li>
+<p>Ensure all components have appropriate stereotypes</p>
+</li>
+<li>
+<p>Verify that all interfaces have specific and unique names:</p>
+<ul>
+<li>&quot;OrderEntry&quot; - Connection between ShoppingCart and Order</li>
+<li>&quot;OrderableItem&quot; - Connection between Order and Product</li>
+<li>&quot;Person&quot; - Connection between Order and Customer</li>
+<li>&quot;OrganizationAffiliation&quot; - Connection between Customer and Organization</li>
+<li>&quot;BackOrderProcessing&quot; - Service provided by BackOrder</li>
+</ul>
+</li>
+<li>
+<p>Verify that all ports have specific and unique names:</p>
+<ul>
+<li>&quot;CartAccessPort&quot; - On ShoppingCart</li>
+<li>&quot;OrderEntryPort&quot;, &quot;ProductPort&quot;, &quot;CustomerPort&quot; - On Order</li>
+<li>&quot;CatalogPort&quot; - On Product</li>
+<li>&quot;ProfilePort&quot; - On Customer</li>
+<li>&quot;MembershipPort&quot; - On Organization</li>
+<li>&quot;InventoryPort&quot; - On BackOrder</li>
+</ul>
+</li>
+<li>
+<p>Adjust positions and sizes for optimal readability</p>
+</li>
+</ol>
+<p><img decoding="async" loading="lazy" alt="Final Diagram" src="/UML-Umbrello-Tutorials/assets/images/16-FinalDiagram-f458258e5f4209bc4130f31155e257e5.png" width="1286" height="767" class="img_ev3q"></p>
+<p><em>Completed component diagram</em></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="10-saving-and-exporting">10. Saving and Exporting<a href="#10-saving-and-exporting" class="hash-link" aria-label="Direct link to 10. Saving and Exporting" title="Direct link to 10. Saving and Exporting">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="saving-your-work">Saving Your Work<a href="#saving-your-work" class="hash-link" aria-label="Direct link to Saving Your Work" title="Direct link to Saving Your Work">​</a></h3>
+<ol>
+<li>Go to <strong>File → Save As</strong></li>
+<li>Choose a location and filename</li>
+<li>Select .xmi format</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="exporting-as-an-image">Exporting as an Image<a href="#exporting-as-an-image" class="hash-link" aria-label="Direct link to Exporting as an Image" title="Direct link to Exporting as an Image">​</a></h3>
+<ol>
+<li>Go to <strong>File → Export as Picture</strong></li>
+<li>Select your preferred format (PNG, SVG, etc.)</li>
+<li>Choose location and save</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="11-best-practices">11. Best Practices<a href="#11-best-practices" class="hash-link" aria-label="Direct link to 11. Best Practices" title="Direct link to 11. Best Practices">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="component-diagram-guidelines">Component Diagram Guidelines<a href="#component-diagram-guidelines" class="hash-link" aria-label="Direct link to Component Diagram Guidelines" title="Direct link to Component Diagram Guidelines">​</a></h3>
+<ol>
+<li><strong>Keep it Simple</strong>: Focus on the essential components and relationships</li>
+<li><strong>Meaningful Names</strong>: Use descriptive, specific, and unique names for components, interfaces, and ports</li>
+<li><strong>Consistent Stereotypes</strong>: Apply stereotypes consistently across similar elements</li>
+<li><strong>Color Coding</strong>: Use colors to group related components or indicate their nature</li>
+<li><strong>Clear Interfaces</strong>: Explicitly model and name provided and required interfaces</li>
+<li><strong>Direct Connections</strong>: Make sure connecting lines are as straight and uncrossed as possible</li>
+<li><strong>Annotations</strong>: Use notes to clarify complex relationships or constraints</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="interface-and-port-naming-conventions">Interface and Port Naming Conventions<a href="#interface-and-port-naming-conventions" class="hash-link" aria-label="Direct link to Interface and Port Naming Conventions" title="Direct link to Interface and Port Naming Conventions">​</a></h3>
+<p>Use descriptive, specific, and unique names for interfaces and ports:</p>
+<ul>
+<li><strong>Interface Names</strong>: Should reflect the service offered or required (&quot;OrderEntry&quot;, &quot;Person&quot;, &quot;OrderableItem&quot;, &quot;BackOrderProcessing&quot;, &quot;OrganizationAffiliation&quot;)</li>
+<li><strong>Port Names</strong>: Should describe the connection point&#x27;s purpose (&quot;CartAccessPort&quot;, &quot;OrderEntryPort&quot;, &quot;ProductPort&quot;, &quot;CustomerPort&quot;, &quot;CatalogPort&quot;, &quot;ProfilePort&quot;, &quot;MembershipPort&quot;, &quot;InventoryPort&quot;)</li>
+<li><strong>Avoid Generic Names</strong>: Don&#x27;t use names like &quot;Interface1&quot; or &quot;Port1&quot;</li>
+<li><strong>Be Consistent</strong>: Use similar naming patterns for related interfaces and ports</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="component-diagram-anti-patterns">Component Diagram Anti-patterns<a href="#component-diagram-anti-patterns" class="hash-link" aria-label="Direct link to Component Diagram Anti-patterns" title="Direct link to Component Diagram Anti-patterns">​</a></h3>
+<ol>
+<li><strong>Too Many Components</strong>: Overwhelming diagrams with too many elements</li>
+<li><strong>Missing Interfaces</strong>: Not specifying how components interact</li>
+<li><strong>Unnamed or Generic Names</strong>: Failing to provide specific and unique names for interfaces and ports</li>
+<li><strong>Ambiguous Dependencies</strong>: Unclear relationship types</li>
+<li><strong>Inconsistent Layout</strong>: Random positioning that makes the diagram hard to follow</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="keyboard-shortcuts">Keyboard Shortcuts<a href="#keyboard-shortcuts" class="hash-link" aria-label="Direct link to Keyboard Shortcuts" title="Direct link to Keyboard Shortcuts">​</a></h2>
+<ul>
+<li>Ctrl+S: Save</li>
+<li>Ctrl+Z: Undo</li>
+<li>Ctrl+Y: Redo</li>
+<li>Delete: Remove selected element</li>
+</ul>
+<p>Remember that component diagrams should clearly show the structure and interactions of your system&#x27;s components. Proper naming of all elements, especially interfaces and ports, is crucial for creating diagrams that effectively communicate your design.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/prakash-aryan/UML-Umbrello-Tutorials/tree/main/docs/component-diagram/index.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/UML-Umbrello-Tutorials/docs/seqeunce-diagram/"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Creating Sequence Diagrams with Umbrello 5</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#table-of-contents" class="table-of-contents__link toc-highlight">Table of Contents</a></li><li><a href="#1-introduction-to-component-diagrams" class="table-of-contents__link toc-highlight">1. Introduction to Component Diagrams</a><ul><li><a href="#key-benefits-of-component-diagrams" class="table-of-contents__link toc-highlight">Key Benefits of Component Diagrams</a></li></ul></li><li><a href="#2-understanding-component-diagram-elements" class="table-of-contents__link toc-highlight">2. Understanding Component Diagram Elements</a><ul><li><a href="#components" class="table-of-contents__link toc-highlight">Components</a></li><li><a href="#interfaces" class="table-of-contents__link toc-highlight">Interfaces</a></li><li><a href="#ports" class="table-of-contents__link toc-highlight">Ports</a></li><li><a href="#relationships" class="table-of-contents__link toc-highlight">Relationships</a></li></ul></li><li><a href="#3-problem-statement-e-commerce-system" class="table-of-contents__link toc-highlight">3. Problem Statement: E-Commerce System</a></li><li><a href="#4-getting-started" class="table-of-contents__link toc-highlight">4. Getting Started</a><ul><li><a href="#creating-a-new-component-diagram" class="table-of-contents__link toc-highlight">Creating a New Component Diagram</a></li></ul></li><li><a href="#5-creating-components" class="table-of-contents__link toc-highlight">5. Creating Components</a><ul><li><a href="#adding-the-first-component" class="table-of-contents__link toc-highlight">Adding the First Component</a></li><li><a href="#creating-additional-components" class="table-of-contents__link toc-highlight">Creating Additional Components</a></li></ul></li><li><a href="#6-adding-ports" class="table-of-contents__link toc-highlight">6. Adding Ports</a><ul><li><a href="#adding-ports-to-components" class="table-of-contents__link toc-highlight">Adding Ports to Components</a></li></ul></li><li><a href="#7-creating-interfaces" class="table-of-contents__link toc-highlight">7. Creating Interfaces</a><ul><li><a href="#creating-required-interfaces" class="table-of-contents__link toc-highlight">Creating Required Interfaces</a></li><li><a href="#creating-provided-interfaces" class="table-of-contents__link toc-highlight">Creating Provided Interfaces</a></li></ul></li><li><a href="#8-creating-relationships" class="table-of-contents__link toc-highlight">8. Creating Relationships</a><ul><li><a href="#connecting-interfaces" class="table-of-contents__link toc-highlight">Connecting Interfaces</a></li></ul></li><li><a href="#9-finalizing-the-diagram" class="table-of-contents__link toc-highlight">9. Finalizing the Diagram</a><ul><li><a href="#final-layout-adjustments" class="table-of-contents__link toc-highlight">Final Layout Adjustments</a></li></ul></li><li><a href="#10-saving-and-exporting" class="table-of-contents__link toc-highlight">10. Saving and Exporting</a><ul><li><a href="#saving-your-work" class="table-of-contents__link toc-highlight">Saving Your Work</a></li><li><a href="#exporting-as-an-image" class="table-of-contents__link toc-highlight">Exporting as an Image</a></li></ul></li><li><a href="#11-best-practices" class="table-of-contents__link toc-highlight">11. Best Practices</a><ul><li><a href="#component-diagram-guidelines" class="table-of-contents__link toc-highlight">Component Diagram Guidelines</a></li><li><a href="#interface-and-port-naming-conventions" class="table-of-contents__link toc-highlight">Interface and Port Naming Conventions</a></li><li><a href="#component-diagram-anti-patterns" class="table-of-contents__link toc-highlight">Component Diagram Anti-patterns</a></li></ul></li><li><a href="#keyboard-shortcuts" class="table-of-contents__link toc-highlight">Keyboard Shortcuts</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Made by <a href="https://prakasharyan.com/">Prakash Aryan</a></div></div></div></footer></div>
+</body>
+</html>
