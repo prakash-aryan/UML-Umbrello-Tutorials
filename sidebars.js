@@ -34,6 +34,11 @@ const sidebars = {
       label: 'Sequence Diagrams',
       items: ['seqeunce-diagram/index'],
     },
+    {
+      type: 'category',
+      label: 'Component Diagrams',
+      items: ['component-diagram/index'],
+    },
   ],
 };
 

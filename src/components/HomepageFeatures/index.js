@@ -54,6 +54,16 @@ const FeatureList = [
     ),
     link: '/docs/seqeunce-diagram'
   },
+  {
+    title: 'Component Diagrams',
+    Svg: require('@site/static/img/component-diagram.svg').default,
+    description: (
+      <>
+        Model physical components of a system and their interfaces with provided and required services.
+      </>
+    ),
+    link: '/docs/component-diagram'
+  },
 ];
 
 function Feature({Svg, title, description, link}) {
